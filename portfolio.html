@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <a class="logo header__logo" href="./index.html">
+          <span class="logo__word-web">Web</span
+          ><span class="logo__word-studio">Studio</span>
+        </a>
+        <button
+          class="header__mobile-button"
+          is-open
+          type="button"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="navigation-menu"
+        >
+          <svg
+            class="mobile-button__icon"
+            width="24px"
+            height="24px"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="mobile-button__icon-close"
+              href="./images/symbol-defs.svg#icon-closemobmenu"
+            ></use>
+            <use
+              class="mobile-button__icon-menu"
+              href="./images/symbol-defs.svg#icon-mobmenu"
+            ></use>
+          </svg>
+        </button>
+        <nav class="header__navigation" id="navigation-menu" data-menu>
+          <ul class="site-nav list">
+            <li class="site-nav__item-page">
+              <a class="site-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="site-nav__item-page">
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item-page">
+              <a class="site-nav__link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="site-contact list">
+            <li class="site-contact__item">
+              <a class="site-contact__info" href="mailto:info@devstudio.com">
+                <svg class="site-contact__icon" width="16px" height="12px">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="site-contact__item">
+              <a class="site-contact__info" href="tel:+380961111111">
+                <svg class="site-contact__icon" width="10px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="social-contact">
+            <li class="social-contact__item">
+              <a
+                class="social-contact__link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagramm
+              </a>
+            </li>
+            <li class="social-contact__item">
+              <a
+                class="social-contact__link"
+                href=" https://twitter.com/ "
+                target="_blank"
+                rel="noopener noreferrer"
+                >Twitter</a
+              >
+            </li>
+            <li class="social-contact__item">
+              <a
+                class="social-contact__link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Facebook</a
+              >
+            </li>
+            <li class="social-contact__item">
+              <a
+                class="social-contact__link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio section">
+        <div class="portfolio__container container">
+          <h1 class="portfolio__title visually-hidden">Фильтр портфолио</h1>
+          <ul class="filter-bar list">
+            <li class="filter-bar__item">
+              <button class="filter-bar__button" type="button">Все</button>
+            </li>
+            <li class="filter-bar__item">
+              <button class="filter-bar__button" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li class="filter-bar__item">
+              <button class="filter-bar__button" type="button">
+                Приложения
+              </button>
+            </li>
+            <li class="filter-bar__item">
+              <button class="filter-bar__button" type="button">Дизайн</button>
+            </li>
+            <li class="filter-bar__item">
+              <button class="filter-bar__button" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="works list">
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img01370.jpg   370w,
+                      ./images/img01450.jpg   450w,
+                      ./images/img01740.jpg   740w,
+                      ./images/img01900.jpg   900w,
+                      ./images/img011110.jpg 1110w,
+                      ./images/img011350.jpg 1350w
+                    "
+                    src="./images/img01370.jpg"
+                    alt="приклад веб сторінки відкритий на ноутбуці"
+                    sizes=" (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">Технокряк</h2>
+                  <p class="works__group-name">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img02370.jpg   370w,
+                      ./images/img02450.jpg   450w,
+                      ./images/img02740.jpg   740w,
+                      ./images/img02900.jpg   900w,
+                      ./images/img021110.jpg 1110w,
+                      ./images/img021350.jpg 1350w
+                    "
+                    src="./images/img02370.jpg"
+                    alt="постер New Orlean vs Golden Star"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="works__group-name">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img03370.jpg   370w,
+                      ./images/img03450.jpg   450w,
+                      ./images/img03740.jpg   740w,
+                      ./images/img03900.jpg   900w,
+                      ./images/img031110.jpg 1110w,
+                      ./images/img031350.jpg 1350w
+                    "
+                    src="./images/img03370.jpg"
+                    alt="логотип ресторана Seafood"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">Ресторан Seafood</h2>
+                  <p class="works__group-name">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img04370.jpg   370w,
+                      ./images/img04450.jpg   450w,
+                      ./images/img04740.jpg   740w,
+                      ./images/img04900.jpg   900w,
+                      ./images/img041110.jpg 1110w,
+                      ./images/img041350.jpg 1350w
+                    "
+                    src="./images/img04370.jpg"
+                    alt="повнорозмірні навушники"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw "
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">Проект Prime</h2>
+                  <p class="works__group-name">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img05370.jpg   370w,
+                      ./images/img05450.jpg   450w,
+                      ./images/img05740.jpg   740w,
+                      ./images/img05900.jpg   900w,
+                      ./images/img051110.jpg 1110w,
+                      ./images/img051350.jpg 1350w
+                    "
+                    src="./images/img05370.jpg"
+                    alt="дві коробочки"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">Проект Boxes</h2>
+                  <p class="works__group-name">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img06370.jpg   370w,
+                      ./images/img06450.jpg   450w,
+                      ./images/img06740.jpg   740w,
+                      ./images/img06900.jpg   900w,
+                      ./images/img061110.jpg 1110w,
+                      ./images/img061350.jpg 1350w
+                    "
+                    src="./images/img06370.jpg"
+                    alt="компютерний монітор з відкритою веб сторінкою"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">Inspiration has no Borders</h2>
+                  <p class="works__group-name">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img07370.jpg   370w,
+                      ./images/img07450.jpg   450w,
+                      ./images/img07740.jpg   740w,
+                      ./images/img07900.jpg   900w,
+                      ./images/img071110.jpg 1110w,
+                      ./images/img071350.jpg 1350w
+                    "
+                    src="./images/img07370.jpg"
+                    alt="відкрита книга з малюнками"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">Издание Limited Edition</h2>
+                  <p class="works__group-name">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img08370.jpg   370w,
+                      ./images/img08450.jpg   450w,
+                      ./images/img08740.jpg   740w,
+                      ./images/img08900.jpg   900w,
+                      ./images/img081110.jpg 1110w,
+                      ./images/img081350.jpg 1350w
+                    "
+                    src="./images/img08370.jpg"
+                    alt="картонна бірка проекту LAB EL TAG"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">Проект LAB</h2>
+                  <p class="works__group-name">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="works__card">
+              <a class="works__link" href="">
+                <div class="works__image-wrapper">
+                  <img
+                    class="works__image"
+                    srcset="
+                      ./images/img09370.jpg   370w,
+                      ./images/img09450.jpg   450w,
+                      ./images/img09740.jpg   740w,
+                      ./images/img09900.jpg   900w,
+                      ./images/img091110.jpg 1110w,
+                      ./images/img091350.jpg 1350w
+                    "
+                    src="./images/img09370.jpg"
+                    alt="відкритий ноутбук з вебсторінкою Growing Business"
+                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                  />
+                  <p class="works__meta">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Mollitia illum ab, suscipit esse tenetur aut velit placeat
+                    dignissimos assumenda voluptatum? Exercitationem aliquam
+                    ipsam rem magni molestiae, quo error repudiandae quasi.
+                  </p>
+                </div>
+                <div class="works__group-wrapper">
+                  <h2 class="works__image-title">Growing Business</h2>
+                  <p class="works__group-name">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__adress-container">
+          <a class="logo footer__logo" href="./index.html">
+            <span class="logo__word-web">Web</span
+            ><span class="logo__word-studio">Studio</span>
+          </a>
+          <address class="adress">
+            <ul class="adress__list list">
+              <li class="adress__item">
+                <a
+                  class="adress__physical-address adress__link"
+                  href="https://goo.gl/maps/ZD16TCM3uoNAEAxr9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="adress__item">
+                <a
+                  class="adress__email adress__link"
+                  href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="adress__item">
+                <a class="adress__tel adress__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__join-container">
+          <h3 class="footer__join-title">присоединяйтесь</h3>
+          <ul class="social-networks list">
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-networks__footer-link"
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-networks__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-networks__footer-link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-networks__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-networks__footer-link"
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-networks__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-networks__item">
+              <a
+                class="social-networks__link social-networks__footer-link"
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg class="social-networks__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="subscription" name="subscribe-form">
+          <div class="subscription__wrapper">
+            <label class="subscription__label" for="email"
+              >Подпишитесь на рассылку</label
+            >
+            <input
+              class="subscription__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+              required
+            />
+          </div>
+          <button class="subscription__button" type="submit">
+            <span class="subscription__button-span">Подписаться</span
+            ><svg class="subscription__icon" width="24px" height="24px">
+              <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/mobilemenu.js"></script>
+  </body>
+</html>

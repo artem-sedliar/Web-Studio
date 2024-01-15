@@ -1,0 +1,115 @@
+.services{
+    @extend %section;
+
+    @media screen and (max-width: 1199px) {
+            display: none
+        }
+
+    &__container {
+            flex-direction: column;
+            @extend %container
+        }
+    &__title {
+        margin-top: 0;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+    
+        color: $title-text-color;
+    }
+    &__list {
+        display: flex;
+        @extend %list;
+    }
+    &__item {
+        position: relative;
+    
+        width: calc((100% - 60px) / 3);
+    
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    &__foto {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    &__header {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        margin: 0;
+        width: 100%;
+    
+        padding: 27px 0px;
+    
+        text-transform: uppercase;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-align: center;
+        letter-spacing: 0.03em;
+    
+        color: $primary-white-color;
+        background-color: rgba(47, 48, 58, 0.8);
+    }
+}
+
+
+// .services__container {
+//     flex-direction: column;
+//     @extend %container
+// }
+// .services__title {
+//     margin-top: 0;
+//     margin-bottom: 50px;
+//     text-align: center;
+//     font-family: $font-primary;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1.16;
+//     letter-spacing: 0.03em;
+
+//     color: $title-text-color;
+// }
+// .services__list {
+//     display: flex;
+//     @extend %list;
+// }
+// .services__item {
+//     position: relative;
+
+//     width: calc((100% - 60px) / 3);
+//     &:not(:last-child) {
+//             margin-right: 30px;
+//         }
+// }
+// .services__foto {
+//     display: block;
+// }
+// .services__header {
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     margin: 0;
+//     width: 100%;
+ 
+//     padding: 27px 0px;
+
+//     text-transform: uppercase;
+//     font-family: $font-primary;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     text-align: center;
+//     letter-spacing: 0.03em;
+
+//     color: $primary-white-color;
+//     background-color: rgba(47, 48, 58, 0.8);
+// }

@@ -1,0 +1,709 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $footer-background-color;
+
+    &__container {
+            // width: 1200px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            
+            // display: flex;
+            // align-items: baseline;
+
+            @media screen and (min-width: 480px) and (max-width:767px) {
+                    width: 480px;
+                    display: block;
+                }
+            
+            @media screen and (min-width: 768px) and (max-width:1199px) {
+                    width: 768px;
+                    display: flex;
+                    flex-wrap: wrap;
+                   
+                    padding-left: 76px;
+                    padding-right: 89px;
+                    align-items: baseline;
+                }
+            
+            @media screen and (min-width: 1200px) {
+                    width: 1200px;
+                    display: flex;
+                    align-items: baseline;
+                   
+                }
+
+
+        }
+    &__adress-container{
+        display: block;
+        // margin-right: auto;
+
+        @media screen and (max-width:767px) {
+               margin-right: auto;
+               margin-left: auto;
+               text-align: center;
+            }
+        @media screen and (min-width: 768px) and (max-width: 1199px){
+            margin-right: 165px;
+            text-align: center;
+        }
+
+         @media screen and (min-width: 1200px) {
+                display: block;
+                margin-right: auto;
+        
+                }
+    }
+    &__logo {
+        
+            display: block;
+            margin-bottom: 20px;
+        
+            .logo__word-studio {
+                color: $primary-white-color;
+            }
+        
+            .logo__word-web {
+                color: $accent-color;
+            }
+    }
+    &__join-container {
+        display: flex;
+        flex-direction: column;
+       
+        
+    
+        @media screen and (max-width:767px) {
+                display: flex;
+                margin-bottom: 60px;
+                text-align: center;
+                align-items:center;
+            //    justify-content: center;
+            }
+        @media screen and (min-width: 768px) and (max-width:1199px) {
+                flex-grow: 1;
+                margin-bottom: 102px;
+                align-items: center
+            }
+
+        
+
+    //   .social-networks {
+    //             // padding: 0;
+    //        }
+    }
+
+
+    &__join-title {
+        margin-bottom: 20px;
+        margin-top: 0;
+        text-transform: uppercase;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+    
+        color: $primary-white-color;
+    }
+
+}
+
+.adress{
+
+    @media screen and (max-width:767px) {
+            margin-bottom: 60px;
+        }
+
+    &__list {
+            @extend %list
+        }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 9px;
+
+        @media screen and (max-width:1199px) {
+                margin-bottom: 8px;
+            }
+
+        }
+    }
+    &__physical-address {
+        text-decoration: none;
+        font-family: $font-primary;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    
+        color: $primary-white-color;
+    }
+    &__tel,&__email {
+        text-decoration: none;
+        font-family: $font-primary;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__link {
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+            &:hover,
+            &:active,
+            &:focus {
+                color: $accent-color;
+            }
+    }
+}
+
+.subscription {
+    //  margin-left: auto;
+    //  display: flex;
+    //  justify-content: space-between;
+    //  align-items: flex-end;
+
+    @media screen and (max-width:767px) {
+            display: block;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 0;
+                }
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            margin-left: auto;
+            justify-content: space-between;
+            align-items: flex-end;
+    
+        }
+
+    &__wrapper {
+            display: flex;
+            flex-direction: column;
+           
+        
+        @media screen and (max-width:1199px) {
+                margin-bottom: 20px;
+            }
+
+                // @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    
+                //     margin-bottom: 20px;
+                // }
+        
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 12px;
+                }
+        }
+        
+        
+
+    &__label {
+        margin-bottom: 20px;
+        margin-top: 0;
+        text-transform: uppercase;
+        font-family: $font-primary;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-align: center;
+        color: $primary-white-color;
+
+        @media screen and (min-width:1199px) {
+                text-align: left;;
+            }
+
+    }
+    &__input {
+        padding: 15px 16px;
+        // min-width: 450px;
+        height: 50px;
+    
+        color: $primary-white-color;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+    
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        @media screen and  (min-width: 480px) and (max-width: 1199px) {
+
+                min-width: 450px;
+                }
+        @media screen and (min-width: 1200px) {
+                min-width: 358px;
+                 }
+
+    
+        &::placeholder {
+            font-family: $font-primary;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.25;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        }
+    
+        &:hover,
+        &:focus {
+            border-color: $accent-color;
+    
+            &.subscription__input::placeholder {
+                color: $accent-color;
+            }
+        }
+    }
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        min-width: 200px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 29px;
+        padding-right: 28px;
+    
+        text-align: center;
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        cursor: pointer;
+        color: $primary-white-color;
+        background-color: $accent-color;
+    
+        border: none;
+        border-radius: 4px;
+        border-color: transparent;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+        @media screen and (max-width:1199px) {
+                
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+    }
+    &__icon {
+            cursor: pointer;
+            fill: currentColor;
+            transition-property: color;
+            transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+            .subscription__button:focus &,
+            .subscription__button:hover &,
+            .subscription__button:active & {
+                color: rgba(255, 255, 255, 0.85);
+            }
+    }
+    &__button-span {
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        .subscription__button:focus &,
+        .subscription__button:hover &,
+        .subscription__button:active & {
+            color: rgba(255, 255, 255, 0.85);
+        }
+    }
+ }
+
+
+.social-networks__footer-link {
+    display: flex;
+    padding: 12px;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+//  .subscription__wrapper {
+//      display: flex;
+//      flex-direction: column;
+//      margin-right: 12px;
+//  }
+
+//  .subscription__label {
+//      margin-bottom: 20px;
+//      margin-top: 0;
+//      text-transform: uppercase;
+//      font-family: $font-primary;
+//      font-weight: 700;
+//      font-size: 14px;
+//      line-height: 1.14;
+//      letter-spacing: 0.03em;
+
+//      color: $primary-white-color;
+//  }
+
+//  .subscription__input {
+//      padding: 15px 16px;
+//      min-width: 358px;
+//      height: 50px;
+
+//      color: $primary-white-color;
+//      background-color: transparent;
+//      border: 1px solid rgba(255, 255, 255, 0.3);
+//      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//      border-radius: 4px;
+
+//      transition-property: border-color;
+//      transition-duration: 250ms;
+//      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//      &::placeholder {
+//          font-family: $font-primary;
+//          font-weight: 400;
+//          font-size: 16px;
+//          line-height: 1.25;
+//          letter-spacing: 0.03em;
+//          color: rgba(255, 255, 255, 0.6);
+//          transition-property: color;
+//          transition-duration: 250ms;
+//          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//      }
+
+//      &:hover,
+//      &:focus {
+//          border-color: $accent-color;
+
+//          &.footer__subscription-input::placeholder {
+//              color: $accent-color;
+//          }
+//      }
+//  }
+
+//  .subscription__button {
+//      display: flex;
+//      justify-content: space-between;
+//      align-items: center;
+
+//      min-width: 200px;
+//      padding-top: 10px;
+//      padding-bottom: 10px;
+//      padding-left: 29px;
+//      padding-right: 28px;
+
+//      text-align: center;
+//      font-family: inherit;
+//      font-weight: 700;
+//      font-size: 16px;
+//      line-height: 1.88;
+//      letter-spacing: 0.06em;
+//      cursor: pointer;
+//      color: $primary-white-color;
+//      background-color: $accent-color;
+
+//      border: none;
+//      border-radius: 4px;
+//      border-color: transparent;
+//      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//  }
+
+//  .subscription__icon {
+//      cursor: pointer;
+//      fill: currentColor;
+//      transition-property: color;
+//      transition-duration: 250ms;
+//      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//      .subscription__button:focus &,
+//      .subscription__button:hover &,
+//      .subscription__button:active & {
+//          color: rgba(255, 255, 255, 0.85);
+//      }
+//  }
+
+//  .subscription__button-span {
+//      transition-property: color;
+//      transition-duration: 250ms;
+//      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//      .subscription__button:focus &,
+//      .subscription__button:hover &,
+//      .subscription__button:active & {
+//          color: rgba(255, 255, 255, 0.85);
+//      }
+//  }
+
+// .footer__join-container .social-networks {
+//     padding: 0;
+// }
+    
+
+
+// .adress__list {
+//     @extend %list
+// }
+
+// .adress__item {
+//     &:not(:last-child) {
+//         margin-bottom: 9px;
+//     }
+// }
+
+// .adress__physical-address {
+//     text-decoration: none;
+//     font-family: $font-primary;
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+
+//     color: $primary-white-color;
+// }
+
+// .adress__tel,
+// .adress__email {
+//     text-decoration: none;
+//     font-family: $font-primary;
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+
+//     color: rgba(255, 255, 255, 0.6);
+// }
+
+// .adress__link {
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+//     &:hover,
+//     &:active,
+//     &:focus {
+//         color: $accent-color;
+//     }
+// }
+
+
+// .footer__container {
+//     width: 1200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     display: flex;
+//     align-items: baseline;
+// }
+
+// .footer__logo {
+
+//     display: block;
+//     margin-bottom: 20px;
+//     .logo__word-studio {
+//             color: $primary-white-color;
+//         }
+//     .logo__word-web {
+//             color: $accent-color;
+//         }
+// }
+
+// .footer__adress-list{
+//     @extend %list
+// }
+// .footer__adress-item {
+//     &:not(:last-child) {
+//             margin-bottom: 9px;}
+// }
+// .footer__physical-address {
+//     text-decoration: none;
+//     font-family: $font-primary;
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+
+//     color: $primary-white-color;
+// }
+// .footer__tel,
+// .footer__email {
+//     text-decoration: none;
+//     font-family: $font-primary;
+//     font-style: normal;
+//     font-size: 14px;
+//     line-height: 1.7;
+//     letter-spacing: 0.03em;
+
+//     color: rgba(255, 255, 255, 0.6);
+// }
+// .footer__link {
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     &:hover,
+//     &:active,
+//     &:focus {
+//             color: $accent-color;
+//         }
+// }
+
+
+// .footer__join-container {
+//     display: flex;
+//     flex-direction: column;
+//     min-width: 206px;
+//     margin-left: 70px;
+// }
+
+// .footer__join-title {
+//     margin-bottom: 20px;
+//     margin-top: 0;
+//     text-transform: uppercase;
+//     font-family: $font-primary;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+
+//     color: $primary-white-color;
+// }
+// .footer__subscribe-form {
+//     margin-left: 93px;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: flex-end;
+// }
+
+// .footer__subscription-wrapper {
+//     display: flex;
+//     flex-direction: column;
+//     margin-right: 12px;
+// }
+// .footer__subscription-label {
+//     margin-bottom: 20px;
+//     margin-top: 0;
+//     text-transform: uppercase;
+//     font-family: $font-primary;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 1.14;
+//     letter-spacing: 0.03em;
+
+//     color: $primary-white-color;
+// }
+
+// .footer__subscription-input {
+//     padding: 15px 16px;
+//     min-width: 358px;
+//     height: 50px;
+
+//     color: $primary-white-color;
+//     background-color: transparent;
+//     border: 1px solid rgba(255, 255, 255, 0.3);
+//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//     border-radius: 4px;
+
+//     transition-property: border-color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     &::placeholder{
+//         font-family: $font-primary;
+//             font-weight: 400;
+//             font-size: 16px;
+//             line-height: 1.25;
+//             letter-spacing: 0.03em;
+//             color: rgba(255, 255, 255, 0.6);
+//             transition-property: color;
+//             transition-duration: 250ms;
+//             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          
+//         }
+//     &:hover,
+//     &:focus{
+//             border-color: $accent-color;
+//             &.footer__subscription-input::placeholder
+//             {
+//                     color: $accent-color;
+//                 }
+//         }
+// }
+// .footer__subscription-button {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+
+//     min-width: 200px;
+//     padding-top: 10px;
+//     padding-bottom: 10px;
+//     padding-left: 29px;
+//     padding-right: 28px;
+
+//     text-align: center;
+//     font-family: inherit;
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.88;
+//     letter-spacing: 0.06em;
+//     cursor: pointer;
+//     color: $primary-white-color;
+//     background-color: $accent-color;
+
+//     border: none;
+//     border-radius: 4px;
+//     border-color: transparent;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+// }
+
+// .footer__subscription-icon {
+//     cursor: pointer;
+//     fill: currentColor;
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     .footer__subscription-button:focus &,
+//         .footer__subscription-button:hover &,
+//         .footer__subscription-button:active & {
+//             color: rgba(255, 255, 255, 0.85);
+//         }
+// }
+
+// .footer__button-span {
+//     transition-property: color;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     .footer__subscription-button:focus &,
+//     .footer__subscription-button:hover &,
+//     .footer__subscription-button:active & {
+//             color: rgba(255, 255, 255, 0.85);
+//         }
+// }
+
